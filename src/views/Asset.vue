@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="asset">
     <nav-bar></nav-bar>
   </div>
 </template>
@@ -9,7 +9,7 @@
 import NavBar from "@/components/NavBar.vue";
 
 export default {
-  name: "Home",
+  name: "Asset",
   components: {
     "nav-bar": NavBar
   }

@@ -1,7 +1,7 @@
 <template>
   <div class="header-box">
-    <span class="icon iconfont">&#58908;</span>
-    <span class="title">{{ title }}</span>
+    <span class="icon iconfont" v-if="goBack">&#58908;</span>
+    <span class="title">{{ headerTitle }}</span>
   </div>
 </template>
 <script>
@@ -11,13 +11,14 @@ export default {
     return {};
   },
   props: {
-    title: {
+    headerTitle: {
       type: String,
       required: true,
       default: "这是一个title"
     },
     goBack: {
-      type: Boolean
+      type: Boolean,
+      default: false
     }
   }
 };
@@ -33,7 +34,7 @@ export default {
   width: 100%;
   height: 2.8rem;
   line-height: 2.8rem;
-  //   border: 1px black solid;
+  border-bottom: 1px solid #dddddd;
   span {
     float: left;
     left: 0;

@@ -26,12 +26,15 @@ export default {
   },
   methods: {
     switchRouter(route) {
-      location.replace(route);
+      this.$router.push({ path: route });
     }
   }
 };
 </script>
 <style lang="less" scoped>
+.iconfont {
+  font-size: 24px;
+}
 .navbar-box {
   display: flex;
   position: fixed;

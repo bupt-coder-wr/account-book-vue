@@ -1,5 +1,6 @@
 <template>
   <div class="discover">
+    <div>discover page</div>
     <nav-bar></nav-bar>
   </div>
 </template>

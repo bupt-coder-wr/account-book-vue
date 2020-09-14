@@ -1,5 +1,6 @@
 <template>
   <div class="asset">
+    <div>asset page</div>
     <nav-bar></nav-bar>
   </div>
 </template>
